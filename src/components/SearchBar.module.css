@@ -1,0 +1,66 @@
+.searchBanner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.searchBanner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.searchBanner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.searchForm input, .searchForm select {
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.searchForm input[type="text"] {
+  flex-grow: 1;
+}
+
+.searchForm button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchForm button:hover {
+  opacity: 0.9;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .searchBanner h1 {
+    font-size: 2rem;
+  }
+
+  .searchForm {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

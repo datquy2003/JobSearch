@@ -1,0 +1,87 @@
+.header {
+  background-color: var(--white-color);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--text-color);
+}
+
+.navigation a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover, .navigation a.active {
+  color: var(--primary-color);
+}
+
+.authButtons button {
+  margin-left: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnLogin {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btnRegister {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.btnLogin:hover {
+  background-color: var(--secondary-color);
+}
+
+.btnRegister:hover {
+  opacity: 0.9;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+  }
+
+  .navigation a {
+    margin: 0 0.75rem;
+  }
+}

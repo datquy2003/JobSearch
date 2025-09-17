@@ -1,0 +1,26 @@
+.jobList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+.jobList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.jobListHeader {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.jobListHeader h2 {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.jobListHeader p {
+    font-size: 1.1rem;
+    color: #666;
+}
