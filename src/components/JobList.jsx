@@ -1,9 +1,14 @@
 import React from 'react';
 import JobCard from './JobCard';
-import styles from './JobList.module.css'; // Import CSS module
+import styles from './JobList.module.css';
+
+// 1. Import các hình ảnh từ thư mục assets
+import logoFPT from '../assets/company-logo-1.png';
+import logoVNG from '../assets/company-logo-2.png';
+import logoTiki from '../assets/company-logo-3.png';
+// Thêm các logo khác nếu có...
 
 const jobs = [
-    // ... (dữ liệu jobs giữ nguyên như cũ)
   {
     id: 1,
     title: 'Senior Frontend Developer (ReactJS)',
@@ -11,7 +16,8 @@ const jobs = [
     location: 'Hà Nội',
     salary: 'Thương lượng',
     tags: ['ReactJS', 'JavaScript', 'HTML5', 'CSS3', 'Agile'],
-    logo: './src/assets/company-logo-1.png'
+    // 2. Sử dụng biến đã import thay vì chuỗi đường dẫn tĩnh
+    logo: logoFPT 
   },
   {
     id: 2,
@@ -20,7 +26,7 @@ const jobs = [
     location: 'Hồ Chí Minh',
     salary: '$1500 - $3000',
     tags: ['Node.js', 'Java', 'Microservices', 'AWS', 'SQL'],
-    logo: './src/assets/company-logo-2.png'
+    logo: logoVNG
   },
   {
     id: 3,
@@ -29,9 +35,9 @@ const jobs = [
     location: 'Hồ Chí Minh',
     salary: 'Up to $2500',
     tags: ['MongoDB', 'Express', 'ReactJS', 'Node.js'],
-    logo: './src/assets/company-logo-3.png'
+    logo: logoTiki
   },
-    // ... (các jobs còn lại)
+  // Giả sử bạn có thêm các job khác, hãy import và gán tương tự
 ];
 
 const JobList = () => {
