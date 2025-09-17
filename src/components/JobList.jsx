@@ -2,11 +2,14 @@ import React from 'react';
 import JobCard from './JobCard';
 import styles from './JobList.module.css';
 
-// 1. Import các hình ảnh từ thư mục assets
 import logoFPT from '../assets/company-logo-1.png';
 import logoVNG from '../assets/company-logo-2.png';
 import logoTiki from '../assets/company-logo-3.png';
-// Thêm các logo khác nếu có...
+import logoVT from '../assets/company-logo-4.png';
+import logoVNPT from '../assets/company-logo-5.png';
+
+
+//logos 
 
 const jobs = [
   {
@@ -16,20 +19,52 @@ const jobs = [
     location: 'Hà Nội',
     salary: 'Thương lượng',
     tags: ['ReactJS', 'JavaScript', 'HTML5', 'CSS3', 'Agile'],
-    // 2. Sử dụng biến đã import thay vì chuỗi đường dẫn tĩnh
+
     logo: logoFPT 
   },
+
   {
     id: 2,
-    title: 'Backend Developer (Node.js/Java)',
+    title: '3D Game Developer',
     company: 'VNG Corporation',
+    location: 'Hồ Chí Minh',
+    salary: '$2000$ - $3000',
+    tags: ['Python', 'C++', 'Unity', 'Unreal Engine3', 'Unreal Engine4'],
+    logo: logoVNG
+  },
+  
+  {
+    id: 3,
+    title: 'Internship Frontend Developer',
+    company: 'Viettel',
+    location: 'Hà Nội',
+    salary: 'Up to $500-1000$',
+    tags: ['HTML5', 'CSS3', 'TypeScript', 'ReactJS'],
+    logo: logoVT
+  },
+
+  {
+    id: 4,
+    title: 'Internship Backend Developer',
+    company: 'Viettel',
+    location: 'Hà Nội',
+    salary: 'Up to $500-1000$',
+    tags: ['Python', 'Java', 'NodeJS', 'SQL , NoSQL'],
+    logo: logoVT
+  },
+
+ {
+    id: 5,
+    title: 'Junior Backend Developer (Node.js/Java)',
+    company: 'VNPT',
     location: 'Hồ Chí Minh',
     salary: '$1500 - $3000',
     tags: ['Node.js', 'Java', 'Microservices', 'AWS', 'SQL'],
-    logo: logoVNG
+    logo: logoVNPT
   },
+
   {
-    id: 3,
+    id: 6,
     title: 'Fullstack Engineer (MERN Stack)',
     company: 'Tiki',
     location: 'Hồ Chí Minh',
@@ -37,7 +72,9 @@ const jobs = [
     tags: ['MongoDB', 'Express', 'ReactJS', 'Node.js'],
     logo: logoTiki
   },
-  // Giả sử bạn có thêm các job khác, hãy import và gán tương tự
+
+
+//jobs
 ];
 
 const JobList = () => {
