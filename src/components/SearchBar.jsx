@@ -8,7 +8,7 @@ const SearchBar = () => {
         <h1>Tìm kiếm công việc mơ ước của bạn</h1>
         <p>Hơn 100,000+ công việc đang chờ đợi</p>
         <form className={styles.searchForm}>
-          <input type="tim_viec" placeholder="Tìm kiếm việc bạn đang cần ngay tại đây!" />
+          <input type="tim_viec" placeholder="Tìm việc làm ở ngay đây!" />
           <select>
             <option value="1">Tất cả địa điểm</option>
             <option value="2">TP Hà Nội</option>
