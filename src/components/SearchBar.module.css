@@ -1,34 +1,38 @@
+/* src/components/SearchBar.module.css (PHIÊN BẢN SỬA LỖI) */
+
 .searchBanner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/logo-header.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/logo-header.png');
   background-size: cover;
   background-position: center;
   padding: 4rem 0;
   text-align: center;
-  color: var(--white-color);
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
   transition: background-color 0.3s ease;
 }
 
 .searchBanner h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .searchBanner p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: var(--white-color);
-  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  font-weight: 600;
 }
 
 .searchForm {
   display: flex;
   justify-content: center;
   gap: 10px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: var(--search-form-bg);
   padding: 1rem;
   border-radius: 8px;
   max-width: 900px;
   margin: 0 auto;
+  transition: background-color 0.3s ease;
 }
 
 .searchForm input, .searchForm select {
@@ -36,6 +40,8 @@
   border: 1px solid var(--border-color);
   border-radius: 5px;
   font-size: 1rem;
+  background-color: var(--card-bg-color);
+  color: var(--text-color);
 }
 
 .searchForm input[type="text"] {
@@ -45,7 +51,7 @@
 .searchForm button {
   padding: 0.8rem 1.5rem;
   background-color: var(--primary-color);
-  background-color: var(--search-form-bg);
+  color: #fff; 
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -56,6 +62,7 @@
 .searchForm button:hover {
   opacity: 0.9;
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .searchBanner h1 {
