@@ -7,6 +7,7 @@
   --bg-color: #f8f9fa; 
   --card-bg-color: #fff;
   --search-form-bg: rgba(255, 255, 255, 0.9);
+  --white-color: #fff;
 }
 
 [data-theme="dark"] {
@@ -18,6 +19,7 @@
   --bg-color: #121212;
   --card-bg-color: #1e1e1e;
   --search-form-bg: rgba(30, 30, 30, 0.9);
+  --white-color: #fff;
 }
 
 body {
