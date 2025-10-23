@@ -17,7 +17,7 @@
   font-size: 1.2rem;
   margin-bottom: 2rem;
   color: var(--white-color);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .searchForm {
