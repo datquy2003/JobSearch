@@ -1,7 +1,8 @@
 .categoriesSection {
   padding: 3rem 0;
-  background-color: var(--white-color);
-  border-bottom: 1px solid var(--border-color);
+  background-color: var(--card-bg-color); 
+  border-bottom: 1px solid var(--border-color); 
+  transition: background-color 0.3s ease;
 }
 
 .header {
@@ -17,7 +18,7 @@
 
 .header p {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--text-color-light); 
 }
 
 .categoryGrid {
@@ -27,8 +28,8 @@
 }
 
 .categoryCard {
-  background-color: var(--white-color);
-  border: 1px solid var(--border-color);
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color); 
   border-radius: 8px;
   padding: 1.5rem 1.2rem;
   text-align: center;
@@ -53,7 +54,7 @@
 
 .categoryCount {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--text-color-light);
   margin: 0;
 }
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './FeaturedCategories.module.css';
 
-// Dữ liệu mẫu cho các ngành nghề nổi bật
 const categories = [
   { id: 1, name: 'Frontend', count: '178 việc làm' },
   { id: 2, name: 'Backend', count: '210 việc làm' },

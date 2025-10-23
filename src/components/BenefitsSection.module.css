@@ -1,0 +1,73 @@
+.benefitsSection {
+  adding: 3rem 0;
+  background-color: var(--card-bg-color); 
+  border-top: 1px solid var(--border-color); 
+  transition: background-color 0.3s ease;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header h2 {
+  font-size: 2.2rem;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: var(--text-color-light);
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 2rem;
+}
+
+.benefitCard {
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.benefitCard:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-color: var(--border-color);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--text-color-light); 
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .benefitsGrid {
+    grid-template-columns: 1fr; /* 1 cột trên tablet/mobile */
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header h2 {
+    font-size: 1.8rem;
+  }
+}

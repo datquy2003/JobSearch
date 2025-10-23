@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Header.module.css'; // Import CSS module
+import styles from './Header.module.css';
 
-const Header = () => {
+const Header = ({ toggleTheme, theme }) => {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.headerContent}`}>
@@ -13,6 +13,17 @@ const Header = () => {
           <a href="#">Blog</a>
         </nav>
         <div className={styles.authButtons}>
+          
+          
+          <button 
+            onClick={toggleTheme} 
+            className={styles.themeToggle}
+            aria-label="Chuyển đổi theme"
+          >
+           
+            {theme === 'light' ? '🌙' : '☀️'}
+          </button>
+          
           <button className={styles.btnLogin}>Đăng nhập</button>
           <button className={styles.btnRegister}>Đăng ký</button>
         </div>
