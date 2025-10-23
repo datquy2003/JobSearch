@@ -60,13 +60,13 @@
 /* Responsive */
 @media (max-width: 992px) {
   .categoryGrid {
-    grid-template-columns: repeat(3, 1fr); /* 3 cột trên tablet */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .categoryGrid {
-    grid-template-columns: repeat(2, 1fr); /* 2 cột trên mobile */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   .header h2 {

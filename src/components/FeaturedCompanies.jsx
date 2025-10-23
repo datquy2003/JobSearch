@@ -5,13 +5,14 @@ import logoVNG from '../assets/company-logo-2.png';
 import logoTiki from '../assets/company-logo-3.png';
 import logoVT from '../assets/company-logo-4.png';
 import logoVNPT from '../assets/company-logo-5.png';
-
+import logoGrab from '../assets/company-logo-6.png';
 const companies = [
-  { id: 1, name: 'Grab', logo: logoFPT },
-  { id: 2, name: 'Momo', logo: logoVNG },
-  { id: 3, name: 'Shopee', logo: logoTiki },
-  { id: 4, name: 'TopCV', logo: logoVT },
-  { id: 5, name: 'Viettel', logo: logoVNPT },
+  { id: 1, name: 'FPT', logo: logoFPT },
+  { id: 2, name: 'VNG', logo: logoVNG },
+  { id: 3, name: 'Tiki', logo: logoTiki },
+  { id: 4, name: 'VT', logo: logoVT },
+  { id: 5, name: 'VNPT', logo: logoVNPT },
+  { id: 6, name: 'Grab', logo: logoGrab },
 ];
 
 const FeaturedCompanies = () => {
